@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "mycompany-standard": {
+      "description": "A blank schematic.",
+      "factory": "./mycompany-standard/index#mycompanyStandard"
+    },
+    "ng-new": {
+      "description": "A blank schematic.",
+      "factory": "./ng-new/index#ngNew"
+    }
+  }
+}
