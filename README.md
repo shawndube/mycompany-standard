@@ -10,7 +10,7 @@ schematics .:ng-new
  - Find how to switch to Yarn 2. Do we need "pre" step or process to install a bunch of things (ng cli, yarn, etc.)
 
 
- # Current failure point: 
+ # Original failure point - fixed by using applyToSubtree(): 
 
 ![Fails on EsLint](eslint-failure.PNG)
 
@@ -25,3 +25,6 @@ schematics .:ng-new
 2. cd some-proj
 3. npm link ../mycompany-standard      NOTE(This is just temporary for quickly being able to run your schematics. You would package your schematic up into an npm package for actual use.)
 4. ng g mycompany-standard:ng-new
+
+ 
+
