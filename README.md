@@ -13,3 +13,15 @@ schematics .:ng-new
  # Current failure point: 
 
 ![Fails on EsLint](eslint-failure.PNG)
+
+
+##Steps to make this work from a fresh clone of the repo
+
+- Part of your problem is that you're trying to run a schematic without an Angular project
+- The idea behind schematics are to have an existing Angular project and make modifications
+- Technically your schematic will work inside an Angular project, but it also creates another Angular project inside the Angular project
+
+1. ng new some-proj
+2. cd some-proj
+3. npm link ../mycompany-standard      NOTE(This is just temporary for quickly being able to run your schematics. You would package your schematic up into an npm package for actual use.)
+4. ng g mycompany-standard:ng-new
